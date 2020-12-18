@@ -6,9 +6,9 @@ export default yup.object().shape({
     .required("pizza name is required")
     .min(2, "username must be 2 chars long"),
     //dropbox under
-  slice: yup
+  psize: yup
     .string()
-    .oneOf(["triangle","square","pie",], "type of pizza is required"),
+    .oneOf(["12 inches","16 inches","20 inches",], "Size of pizza is required"),
   // Checkboxs under
  pepperoni: yup.boolean(),
   meatball: yup.boolean(),
@@ -16,5 +16,6 @@ export default yup.object().shape({
   chicken:yup.boolean(),
   //special request not required
   
+  specialReq: yup.string(),
 });
 
