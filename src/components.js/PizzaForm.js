@@ -105,10 +105,12 @@ export default function PizzaForm (props){
 
                <div className ='submit'>
                <button 
-               onClick={routeToSubmit} className ='submitButton'
+                className ='submitButton'
                disabled={disabled}>submit</button>
                </div>
            </div>
        </form>
     )
 }
+
+// onClick={routeToSubmit}

@@ -6,6 +6,7 @@ import * as yup from "yup";
 import axios from 'axios'; 
 import schema from "./validation.js/schema"
 import Form from "./components.js/Form"
+import Submit from "./components.js/submit.js"
 
 // function FetchStock(){
 // return Promise.resolve({success: true, []});
@@ -109,6 +110,9 @@ const App = () => {
        disabled ={disabled}
        errors ={formErrors}/>
       </Route>
+      {/* <Route path ={"submitPage"}>
+        <Submit />
+      </Route> */}
     <Route exact path ={"/"}>
       <Homepage />
     </Route>
